@@ -7,6 +7,7 @@ import Navbar from "./Navbar";
 import NoteForm from "./NoteForm";
 import NoteList from "./NoteList";
 import Layout from "./Layout";
+import Counter from "./Counter";
 
 
 function App() {
@@ -27,6 +28,10 @@ function App() {
         {
           path:"notes",
           element:<><NoteForm/><NoteList/></>
+        },
+        {
+          path:"counter",
+          element:<><Counter/></>
         }
       ]
     }

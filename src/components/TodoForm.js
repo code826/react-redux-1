@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../redux/actions/todoAction";
+import { add } from "../redux/todoSlice";
 
 const TodoForm = () =>{
     const [todoInput,setTodoInput] = useState("");
@@ -12,7 +13,7 @@ const TodoForm = () =>{
             alert("Enter Valid Todo Item");
             return;
         }
-        dispatch(addTodo(text));
+        dispatch(add({text:text}));
         setTodoInput("");
     }
     return (

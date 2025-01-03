@@ -13,6 +13,9 @@ const Navbar = (props) =>{
             <span>
                 <NavLink className={({ isActive }) =>  isActive ? "active" : ""} to="/notes">Notes</NavLink>
             </span>
+            <span>
+                <NavLink className={({ isActive }) =>  isActive ? "active" : ""} to="/counter">Counter</NavLink>
+            </span>
           
            
         </nav>
